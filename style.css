@@ -15,6 +15,13 @@
 }
 body
 {
+    
+    background: url("nature_image2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    
     background-color: var(--green);
 
     font-family: 'Playfair Display', serif;
@@ -34,7 +41,7 @@ body
     display: grid;
     grid-template-columns: 0.2fr auto 1fr;
     align-items: center;
-    height: 80px;
+    height: 120px;
     width: 100%;
     max-width: 1720px;
     margin: 0 auto;
@@ -66,7 +73,7 @@ body
 
 .nav-links{
     text-decoration: none;
-    padding: 28px 60px;
+    padding: 45px 60px;
     transition: all 0.2s ease-out;
     cursor: pointer;
 }
@@ -79,12 +86,12 @@ body
 .nav-links-btn
 {
     background-color: var(--orange);
-    height: 81.6px;
-    width: 180px;
+    height: 120px;
+    width: 200px;
     justify-self: end;
     color: black;
     font-weight: 600;
-    padding: 28px 50px;
+    padding: 43px 50px;
 }
 .nav-links-btn:hover
 {
@@ -101,7 +108,9 @@ body
     background: white;
 }
 
-
+/*
+--------------------Main Text---------------------
+*/
 .container
 {
     position: fixed;
@@ -135,14 +144,20 @@ body
 {
     color: var(--orange);
 }
+
+/*
+--------------------Background Image---------------------
+*/
+/*
 .corner-image
 {
+    
     width: 1290px;
     height: 650px;
     position: fixed;
-    bottom: 0;
-    right: 0;
-    
+   /* bottom: 0;
+    right: 0;*/
+/*    
     z-index: -5;
 }
 .corner-image img
@@ -151,14 +166,13 @@ body
     object-fit: cover;
     object-position: 0px -200px;
     
-    
-}
+}*/
 /*
 ********************** MEDIA QUERY *********************************
 */
 
 /*------small screen-------*/
-@media (max-width: 869px)
+@media (max-width: 1000px)
 {
 
     .nav-container
@@ -174,7 +188,7 @@ body
         margin: 0;
         width: 100%;
         position: absolute;
-        top: 80px;
+        top: 120px;
         left: -100%;
         opacity: 0;
         transition: all 0.5s ease;
@@ -197,6 +211,7 @@ body
         width: 100%;
         display: table;
         padding: 7px 10px;
+        font-size: 2rem;
         
     }
     .navbar
@@ -259,24 +274,15 @@ body
     .container
     {
         width: 70%;
+        height: 70%;
+        font-size: 2rem;
     }
-    .container p
+    .container h3
     {
-        font-size: 4rem;
+        font-size: 3rem;
         
     }
 
 
 }
 
-
-/*------medium screen-------*/
-@media (min-width: 869px) and (max-width: 1435px)
-{
-    .container p
-    {
-        font-size: 4.6em;
-        
-    }
-    
-}
